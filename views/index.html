@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" >
+
+    <title>配置平台</title>
+</head>
+<body>
+<div class="container col-lg-9">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">配置平台</h1>
+            <p class="lead">提测管理</p>
+        </div>
+    </div>
+    <form>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="req">需求及背景</label>
+                <textarea type="text" class="form-control" id="req" aria-describedby="reqHelp" placeholder="需求及背景" rows="6" required></textarea>
+                <small id="reqHelp" class="form-text text-muted">请填写提测需求及背景.</small>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="code">代码分支</label>
+                <input type="text" class="form-control" id="code" placeholder="代码分支" required>
+                <label for="cr">CR地址</label>
+                <input type="text" class="form-control" id="cr" placeholder="CR" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="exampleRadios1">是否有数据库变更</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        是
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" >
+                    <label class="form-check-label" for="exampleRadios2">
+                        否
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="db">变更内容</label>
+                <textarea type="text" class="form-control" id="db" placeholder="变更内容" rows="6"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="update">修改重点</label>
+                <textarea type="text" class="form-control" id="update" placeholder="修改重点" rows="6" required></textarea>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="scope">重点测试范围</label>
+                <textarea type="text" class="form-control" id="scope" placeholder="重点测试范围" rows="6" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="devtime">开发时间（小时）</label>
+                <input type="text" class="form-control" id="devtime" placeholder="开发时间（小时）" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="global1">是否包含国际化项目</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gRadios" id="global1" value="option1" checked>
+                    <label class="form-check-label" for="global1">
+                        是
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gRadios" id="global2" value="option2" >
+                    <label class="form-check-label" for="global2">
+                        否
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="/javascripts/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="/javascripts/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="/bootstrap/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
